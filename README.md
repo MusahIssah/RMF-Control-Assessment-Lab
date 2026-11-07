@@ -1,12 +1,14 @@
 # RMF Control Assessment Lab: Windows Domain Controller (DC01)
 
+[![Watch the RMF control assessment walkthrough on YouTube](https://i.ytimg.com/vi/nYuiG7V9qeQ/maxresdefault.jpg)](https://youtu.be/nYuiG7V9qeQ)
+
 A hands-on Risk Management Framework (RMF) control assessment that I ran as the assessor on a Windows Server 2022 domain controller in my home lab. The organization, Harbor Point Medical Group (HPMG), and every person, approval and policy in it are fictional. The technical evidence is real and comes from my own lab.
 
 **Author:** Musah Issah  
 **Period:** Nov 1 to Nov 7, 2026  
 **Standards:** NIST SP 800-53 Rev 5.2.0 (Moderate baseline, SP 800-53B), assessment procedures from SP 800-53A, process from SP 800-37
 
-[Download the assessment workbook](RMF_Control_Assessor_Workbook_Moderate_v2.xlsx) · [Browse the evidence](evidence/) · [Video link](https://youtu.be/nYuiG7V9qeQ)
+[Download the assessment workbook](RMF_Control_Assessor_Workbook_Moderate_v2.xlsx) · [Browse the evidence](evidence/)
 
 ## What this project shows
 
