@@ -1,0 +1,21 @@
+﻿# 01_System_Identity
+# Collected: 2026-11-01 12:35:46 -08:00
+# Host: DC01
+# Collected by: northstar\administrator
+
+
+
+CsName           : DC01
+CsDomain         : ad.northstar.test
+CsDomainRole     : PrimaryDomainController
+OsName           : Microsoft Windows Server 2022 Datacenter Evaluation
+OsVersion        : 10.0.20348
+OsBuildNumber    : 20348
+OsInstallDate    : 10/14/2026 4:01:01 PM
+OsLastBootUpTime : 11/1/2026 12:27:34 PM
+TimeZone         : (UTC-08:00) Pacific Time (US & Canada)
+
+
+
+Current time: 2026-11-01 12:35:49 -08:00
+

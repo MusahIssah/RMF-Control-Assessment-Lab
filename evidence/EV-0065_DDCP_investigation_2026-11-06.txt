@@ -1,0 +1,3 @@
+﻿Window: 2026-11-02 09:30 to 11:30 DC01 local time (Pacific). Directory and policy change events found: 0
+Events that mention the Default Domain Controllers Policy: 0
+2026-11-06 19:01:41

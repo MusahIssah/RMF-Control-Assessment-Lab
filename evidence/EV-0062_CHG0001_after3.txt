@@ -1,0 +1,518 @@
+﻿--- gpupdate (third attempt) ---
+Enabled subcategories after gpupdate: 20
+--- auditpol (effective) ---
+System audit policy
+
+Category/Subcategory                      Setting
+System
+  Security System Extension               No Auditing
+
+  System Integrity                        Success and Failure
+
+  IPsec Driver                            No Auditing
+
+  Other System Events                     Success and Failure
+
+  Security State Change                   Success and Failure
+
+Logon/Logoff
+  Logon                                   Success and Failure
+
+  Logoff                                  Success
+
+  Account Lockout                         Success and Failure
+
+  IPsec Main Mode                         No Auditing
+
+  IPsec Quick Mode                        No Auditing
+
+  IPsec Extended Mode                     No Auditing
+
+  Special Logon                           Success and Failure
+
+  Other Logon/Logoff Events               No Auditing
+
+  Network Policy Server                   Success and Failure
+
+  User / Device Claims                    No Auditing
+
+  Group Membership                        No Auditing
+
+  Access Rights                           No Auditing
+
+Object Access
+  File System                             No Auditing
+
+  Registry                                No Auditing
+
+  Kernel Object                           No Auditing
+
+  SAM                                     No Auditing
+
+  Certification Services                  No Auditing
+
+  Application Generated                   No Auditing
+
+  Handle Manipulation                     No Auditing
+
+  File Share                              No Auditing
+
+  Filtering Platform Packet Drop          No Auditing
+
+  Filtering Platform Connection           No Auditing
+
+  Other Object Access Events              No Auditing
+
+  Detailed File Share                     No Auditing
+
+  Removable Storage                       No Auditing
+
+  Central Policy Staging                  No Auditing
+
+Privilege Use
+  Non Sensitive Privilege Use             No Auditing
+
+  Other Privilege Use Events              No Auditing
+
+  Sensitive Privilege Use                 Success and Failure
+
+Detailed Tracking
+  Process Creation                        No Auditing
+
+  Process Termination                     No Auditing
+
+  DPAPI Activity                          No Auditing
+
+  RPC Events                              No Auditing
+
+  Plug and Play Events                    No Auditing
+
+  Token Right Adjusted Events             No Auditing
+
+Policy Change
+  Audit Policy Change                     Success and Failure
+
+  Authentication Policy Change            Success and Failure
+
+  Authorization Policy Change             Success and Failure
+
+  MPSSVC Rule-Level Policy Change         No Auditing
+
+  Filtering Platform Policy Change        No Auditing
+
+  Other Policy Change Events              No Auditing
+
+Account Management
+  Computer Account Management             Success and Failure
+
+  Security Group Management               Success and Failure
+
+  Distribution Group Management           No Auditing
+
+  Application Group Management            No Auditing
+
+  Other Account Management Events         No Auditing
+
+  User Account Management                 Success and Failure
+
+DS Access
+  Directory Service Access                Success
+
+  Directory Service Changes               Success
+
+  Directory Service Replication           No Auditing
+
+  Detailed Directory Service Replication  No Auditing
+
+Account Logon
+  Kerberos Service Ticket Operations      Success and Failure
+
+  Other Account Logon Events              No Auditing
+
+  Kerberos Authentication Service         Success and Failure
+
+  Credential Validation                   Success and Failure
+
+--- Security log settings ---
+name: Security
+enabled: true
+type: Admin
+owningPublisher: 
+isolation: Custom
+channelAccess: O:BAG:SYD:(A;;0xf0005;;;SY)(A;;0x5;;;BA)(A;;0x1;;;S-1-5-32-573)
+logging:
+  logFileName: %SystemRoot%\System32\Winevt\Logs\Security.evtx
+  retention: true
+  autoBackup: true
+  maxSize: 1073741824
+publishing:
+  fileMax: 1
+--- GPO modified time ---
+
+
+DisplayName      : HPMG-DC-Security-Settings
+ModificationTime : 11/6/2026 6:04:22 PM
+
+
+
+--- GPO extension list ---
+[{35378EAC-683F-11D2-A89A-00C04FBBCFA2}{D02B1F72-3407-48AE-BA88-E8213C6761F1}][{827D319E-6EAC-11D2-A4EA-00C04F79F83A}{803E14A0-B4FB-11D0-A0D0-00A0C90F574B}][{F3CCC681-B74C-4060-9F26-CD84525DCA2A}{0F3F3735-573D-9804-99E4-AB2A69BA5FD4}]
+--- GPO report: HPMG-DC-Security-Settings ---
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{4892446C-07ED-4036-A3D4-F0AF1E50BB1A}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">ad.northstar.test</Domain>
+  </Identifier>
+  <Name>HPMG-DC-Security-Settings</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2026-11-05T20:10:55</CreatedTime>
+  <ModifiedTime>2026-11-07T02:04:23</ModifiedTime>
+  <ReadTime>2026-11-07T02:07:58.1886843Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-2805401065-4257942109-1867365526-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2805401065-4257942109-1867365526-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NORTHSTAR\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2805401065-4257942109-1867365526-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NORTHSTAR\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2805401065-4257942109-1867365526-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NORTHSTAR\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2805401065-4257942109-1867365526-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NORTHSTAR\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>15</VersionDirectory>
+    <VersionSysvol>15</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Security" xsi:type="q1:SecuritySettings">
+        <q1:SecurityOptions>
+          <q1:KeyName>MACHINE\System\CurrentControlSet\Control\Lsa\SCENoApplyLegacyAuditPolicy</q1:KeyName>
+          <q1:SettingNumber>1</q1:SettingNumber>
+          <q1:Display>
+            <q1:Name>Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings</q1:Name>
+            <q1:Units />
+            <q1:DisplayBoolean>true</q1:DisplayBoolean>
+          </q1:Display>
+        </q1:SecurityOptions>
+        <q1:Blocked>false</q1:Blocked>
+      </Extension>
+      <Name>Security</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q2="http://www.microsoft.com/GroupPolicy/Settings/Auditing" xsi:type="q2:AuditSettings">
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Credential Validation</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce923f-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Kerberos Authentication Service</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9242-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Kerberos Service Ticket Operations</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9240-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Computer Account Management</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9236-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Security Group Management</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9237-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit User Account Management</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9235-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Directory Service Access</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce923b-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>1</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Directory Service Changes</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce923c-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>1</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Account Lockout</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9217-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Logoff</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9216-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>1</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Logon</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9215-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Network Policy Server</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9243-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Special Logon</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce921b-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Audit Policy Change</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce922f-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Authentication Policy Change</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9230-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Authorization Policy Change</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9231-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Sensitive Privilege Use</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9228-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Other System Events</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9214-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit Security State Change</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9210-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+        <q2:AuditSetting>
+          <q2:PolicyTarget>System</q2:PolicyTarget>
+          <q2:SubcategoryName>Audit System Integrity</q2:SubcategoryName>
+          <q2:SubcategoryGuid>{0cce9212-69ae-11d9-bed3-505054503030}</q2:SubcategoryGuid>
+          <q2:SettingValue>3</q2:SettingValue>
+        </q2:AuditSetting>
+      </Extension>
+      <Name>Advanced Audit Configuration</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q3="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q3:RegistrySettings">
+        <q3:Policy>
+          <q3:Name>Back up log automatically when full</q3:Name>
+          <q3:State>Enabled</q3:State>
+          <q3:Explain>This policy setting controls Event Log behavior when the log file reaches its maximum size and takes effect only if the "Retain old events" policy setting is enabled.
+
+If you enable this policy setting and the "Retain old events" policy setting is enabled, the Event Log file is automatically closed and renamed when it is full. A new file is then started.
+
+If you disable this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and old events are retained.
+
+If you do not configure this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and the old events are retained.</q3:Explain>
+          <q3:Supported>At least Windows Vista</q3:Supported>
+          <q3:Category>Windows Components/Event Log Service/Security</q3:Category>
+        </q3:Policy>
+        <q3:Policy>
+          <q3:Name>Control Event Log behavior when the log file reaches its maximum size</q3:Name>
+          <q3:State>Enabled</q3:State>
+          <q3:Explain>This policy setting controls Event Log behavior when the log file reaches its maximum size.
+
+If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
+
+If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
+
+Note: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.</q3:Explain>
+          <q3:Supported>At least Windows Vista</q3:Supported>
+          <q3:Category>Windows Components/Event Log Service/Security</q3:Category>
+        </q3:Policy>
+        <q3:Policy>
+          <q3:Name>Specify the maximum log file size (KB)</q3:Name>
+          <q3:State>Enabled</q3:State>
+          <q3:Explain>This policy setting specifies the maximum size of the log file in kilobytes.
+
+If you enable this policy setting, you can configure the maximum log file size to be between 20 megabytes (20480 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
+
+If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 20 megabytes.</q3:Explain>
+          <q3:Supported>At least Windows Vista</q3:Supported>
+          <q3:Category>Windows Components/Event Log Service/Security</q3:Category>
+          <q3:Numeric>
+            <q3:Name>Maximum Log Size (KB)</q3:Name>
+            <q3:State>Enabled</q3:State>
+            <q3:Value>1048576</q3:Value>
+          </q3:Numeric>
+        </q3:Policy>
+        <q3:RegistrySetting>
+          <q3:KeyPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</q3:KeyPath>
+          <q3:AdmSetting>false</q3:AdmSetting>
+          <q3:Value>
+            <q3:Name>InactivityTimeoutSecs</q3:Name>
+            <q3:Number>900</q3:Number>
+          </q3:Value>
+        </q3:RegistrySetting>
+        <q3:RegistrySetting>
+          <q3:KeyPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</q3:KeyPath>
+          <q3:AdmSetting>false</q3:AdmSetting>
+          <q3:Value>
+            <q3:Name>legalnoticecaption</q3:Name>
+            <q3:String>HPMG authorized use only</q3:String>
+          </q3:Value>
+        </q3:RegistrySetting>
+        <q3:RegistrySetting>
+          <q3:KeyPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</q3:KeyPath>
+          <q3:AdmSetting>false</q3:AdmSetting>
+          <q3:Value>
+            <q3:Name>legalnoticetext</q3:Name>
+            <q3:String>This system is for authorized HPMG use only. Activity is monitored and logged. Unauthorized use may result in disciplinary action and legal penalties. By continuing you consent to monitoring.</q3:String>
+          </q3:Value>
+        </q3:RegistrySetting>
+        <q3:Blocked>false</q3:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>0</VersionDirectory>
+    <VersionSysvol>0</VersionSysvol>
+    <Enabled>true</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>Domain Controllers</SOMName>
+    <SOMPath>ad.northstar.test/Domain Controllers</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>
+2026-11-06 18:08:01

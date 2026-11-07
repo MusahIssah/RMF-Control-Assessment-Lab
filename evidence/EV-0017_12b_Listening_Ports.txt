@@ -1,0 +1,60 @@
+﻿# 12b_Listening_Ports
+# Collected: 2026-11-01 12:35:56 -08:00
+# Host: DC01
+# Collected by: northstar\administrator
+
+
+LocalAddress                LocalPort OwningProcess Process                              
+------------                --------- ------------- -------                              
+::1                                53          3276 dns                                  
+fe80::1dbd:9a1c:7d7c:cbde%3        53          3276 dns                                  
+127.0.0.1                          53          3276 dns                                  
+192.168.77.10                      53          3276 dns                                  
+::                                 88           708 lsass                                
+0.0.0.0                           135           960 svchost                              
+::                                135           960 svchost                              
+192.168.77.10                     139             4 System                               
+::                                389           708 lsass                                
+0.0.0.0                           389           708 lsass                                
+::                                445             4 System                               
+::                                464           708 lsass                                
+0.0.0.0                           593           960 svchost                              
+::                                593           960 svchost                              
+::                                636           708 lsass                                
+0.0.0.0                           636           708 lsass                                
+0.0.0.0                          3268           708 lsass                                
+::                               3268           708 lsass                                
+0.0.0.0                          3269           708 lsass                                
+::                               3269           708 lsass                                
+::                               5357             4 System                               
+::                               5985             4 System                               
+0.0.0.0                          9389          3268 Microsoft.ActiveDirectory.WebServices
+::                               9389          3268 Microsoft.ActiveDirectory.WebServices
+::                              47001             4 System                               
+0.0.0.0                         49664           708 lsass                                
+::                              49664           708 lsass                                
+0.0.0.0                         49665           564 wininit                              
+::                              49665           564 wininit                              
+0.0.0.0                         49666          1224 svchost                              
+::                              49666          1224 svchost                              
+0.0.0.0                         49667          1812 svchost                              
+::                              49667          1812 svchost                              
+0.0.0.0                         49668           708 lsass                                
+::                              49668           708 lsass                                
+::                              49670          2292 svchost                              
+0.0.0.0                         49670          2292 svchost                              
+::                              50160           708 lsass                                
+0.0.0.0                         50160           708 lsass                                
+::                              50161          3172 spoolsv                              
+0.0.0.0                         50161          3172 spoolsv                              
+0.0.0.0                         50164           688 services                             
+::                              50164           688 services                             
+::                              50168           708 lsass                                
+0.0.0.0                         50168           708 lsass                                
+::                              50172          3276 dns                                  
+0.0.0.0                         50172          3276 dns                                  
+::                              50187          3236 dfsrs                                
+0.0.0.0                         50187          3236 dfsrs                                
+
+
+

@@ -1,0 +1,37 @@
+﻿# 14_Installed_Roles_Features
+# Collected: 2026-11-01 12:36:00 -08:00
+# Host: DC01
+# Collected by: northstar\administrator
+
+
+DisplayName                                    Name                      InstallState
+-----------                                    ----                      ------------
+Active Directory Domain Services               AD-Domain-Services           Installed
+DNS Server                                     DNS                          Installed
+File and Storage Services                      FileAndStorage-Services      Installed
+File and iSCSI Services                        File-Services                Installed
+File Server                                    FS-FileServer                Installed
+Storage Services                               Storage-Services             Installed
+.NET Framework 4.8 Features                    NET-Framework-45-Features    Installed
+.NET Framework 4.8                             NET-Framework-45-Core        Installed
+WCF Services                                   NET-WCF-Services45           Installed
+TCP Port Sharing                               NET-WCF-TCP-PortSharing45    Installed
+Azure Arc Setup                                AzureArcSetup                Installed
+Group Policy Management                        GPMC                         Installed
+Microsoft Defender Antivirus                   Windows-Defender             Installed
+Remote Server Administration Tools             RSAT                         Installed
+Role Administration Tools                      RSAT-Role-Tools              Installed
+AD DS and AD LDS Tools                         RSAT-AD-Tools                Installed
+Active Directory module for Windows PowerShell RSAT-AD-PowerShell           Installed
+AD DS Tools                                    RSAT-ADDS                    Installed
+Active Directory Administrative Center         RSAT-AD-AdminCenter          Installed
+AD DS Snap-Ins and Command-Line Tools          RSAT-ADDS-Tools              Installed
+DNS Server Tools                               RSAT-DNS-Server              Installed
+System Data Archiver                           System-DataArchiver          Installed
+Windows PowerShell                             PowerShellRoot               Installed
+Windows PowerShell 5.1                         PowerShell                   Installed
+WoW64 Support                                  WoW64-Support                Installed
+XPS Viewer                                     XPS-Viewer                   Installed
+
+
+

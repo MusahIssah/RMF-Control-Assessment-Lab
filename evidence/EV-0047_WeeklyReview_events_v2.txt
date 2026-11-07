@@ -1,0 +1,31 @@
+﻿
+Time                    Id Account              Member                                                     By           
+----                    -- -------              ------                                                     --           
+10/31/2026 9:48:16 PM 4725 svc_nessus                                                                      Administrator
+11/2/2026 7:43:11 AM  4720 jdoe                                                                            Administrator
+11/2/2026 7:43:11 AM  4724 jdoe                                                                            Administrator
+11/2/2026 7:43:11 AM  4722 jdoe                                                                            Administrator
+11/2/2026 8:23:32 AM  4732 Remote Desktop Users CN=John Doe,CN=Users,DC=ad,DC=northstar,DC=test            Administrator
+11/2/2026 6:26:05 PM  4726 jdoe                                                                            Administrator
+11/4/2026 8:09:52 AM  4720 lockout.test                                                                    Administrator
+11/4/2026 8:09:52 AM  4724 lockout.test                                                                    Administrator
+11/4/2026 8:09:52 AM  4722 lockout.test                                                                    Administrator
+11/4/2026 5:28:23 PM  4740 lockout.test                                                                    DC01$        
+11/4/2026 5:53:51 PM  4726 lockout.test                                                                    Administrator
+11/4/2026 7:39:11 PM  4720 mbell                                                                           Administrator
+11/4/2026 7:39:11 PM  4724 mbell                                                                           Administrator
+11/4/2026 7:41:23 PM  4726 mbell                                                                           Administrator
+11/4/2026 7:42:01 PM  4720 mbell                                                                           Administrator
+11/4/2026 7:42:01 PM  4724 mbell                                                                           Administrator
+11/4/2026 7:42:25 PM  4720 adm.mbell                                                                       Administrator
+11/4/2026 7:42:25 PM  4724 adm.mbell                                                                       Administrator
+11/4/2026 7:42:25 PM  4722 adm.mbell                                                                       Administrator
+11/4/2026 7:42:45 PM  4728 Domain Admins        CN=Marcus Bell (admin),CN=Users,DC=ad,DC=northstar,DC=test Administrator
+11/4/2026 7:42:57 PM  4732 Administrators       CN=Marcus Bell (admin),CN=Users,DC=ad,DC=northstar,DC=test Administrator
+11/4/2026 7:49:12 PM  4726 mbell                                                                           Administrator
+11/4/2026 7:49:31 PM  4720 mbell                                                                           Administrator
+11/4/2026 7:49:31 PM  4724 mbell                                                                           Administrator
+11/4/2026 7:49:31 PM  4722 mbell                                                                           Administrator
+11/4/2026 8:13:30 PM  4725 Administrator                                                                   adm.mbell    
+
+

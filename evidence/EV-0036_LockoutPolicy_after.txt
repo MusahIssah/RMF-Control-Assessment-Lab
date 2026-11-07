@@ -1,0 +1,17 @@
+﻿
+
+ComplexityEnabled           : True
+DistinguishedName           : DC=ad,DC=northstar,DC=test
+LockoutDuration             : 00:15:00
+LockoutObservationWindow    : 00:15:00
+LockoutThreshold            : 5
+MaxPasswordAge              : 42.00:00:00
+MinPasswordAge              : 1.00:00:00
+MinPasswordLength           : 7
+objectClass                 : {domainDNS}
+objectGuid                  : 70666fa1-bb47-4268-9567-ef756db2cec8
+PasswordHistoryCount        : 24
+ReversibleEncryptionEnabled : False
+
+
+

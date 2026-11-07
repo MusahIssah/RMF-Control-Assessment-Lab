@@ -1,0 +1,224 @@
+﻿
+
+Name           : lockout.test
+SamAccountName : lockout.test
+Enabled        : True
+LockedOut      : True
+LockoutTime    : 134383157031481785
+BadLogonCount  : 5
+
+
+
+
+
+TimeCreated : 11/4/2026 5:28:23 PM
+Id          : 4771
+Message     : Kerberos pre-authentication failed.
+              
+              Account Information:
+              	Security ID:		S-1-5-21-2805401065-4257942109-1867365526-1108
+              	Account Name:		lockout.test
+              
+              Service Information:
+              	Service Name:		krbtgt/NORTHSTAR
+              
+              Network Information:
+              	Client Address:		::ffff:192.168.77.102
+              	Client Port:		49792
+              
+              Additional Information:
+              	Ticket Options:		0x40810010
+              	Failure Code:		0x12
+              	Pre-Authentication Type:	0
+              
+              Certificate Information:
+              	Certificate Issuer Name:		
+              	Certificate Serial Number: 	
+              	Certificate Thumbprint:		
+              
+              Certificate information is only provided if a certificate was used for pre-authentication.
+              
+              Pre-authentication types, ticket options and failure codes are defined in RFC 4120.
+              
+              If the ticket was malformed or damaged during transit and could not be decrypted, then many fields in 
+              this event might not be present.
+
+TimeCreated : 11/4/2026 5:28:23 PM
+Id          : 4740
+Message     : A user account was locked out.
+              
+              Subject:
+              	Security ID:		S-1-5-18
+              	Account Name:		DC01$
+              	Account Domain:		NORTHSTAR
+              	Logon ID:		0x3E7
+              
+              Account That Was Locked Out:
+              	Security ID:		S-1-5-21-2805401065-4257942109-1867365526-1108
+              	Account Name:		lockout.test
+              
+              Additional Information:
+              	Caller Computer Name:	SVR02
+
+TimeCreated : 11/4/2026 5:28:23 PM
+Id          : 4771
+Message     : Kerberos pre-authentication failed.
+              
+              Account Information:
+              	Security ID:		S-1-5-21-2805401065-4257942109-1867365526-1108
+              	Account Name:		lockout.test
+              
+              Service Information:
+              	Service Name:		krbtgt/NORTHSTAR
+              
+              Network Information:
+              	Client Address:		::ffff:192.168.77.102
+              	Client Port:		49790
+              
+              Additional Information:
+              	Ticket Options:		0x40810010
+              	Failure Code:		0x18
+              	Pre-Authentication Type:	2
+              
+              Certificate Information:
+              	Certificate Issuer Name:		
+              	Certificate Serial Number: 	
+              	Certificate Thumbprint:		
+              
+              Certificate information is only provided if a certificate was used for pre-authentication.
+              
+              Pre-authentication types, ticket options and failure codes are defined in RFC 4120.
+              
+              If the ticket was malformed or damaged during transit and could not be decrypted, then many fields in 
+              this event might not be present.
+
+TimeCreated : 11/4/2026 5:28:23 PM
+Id          : 4771
+Message     : Kerberos pre-authentication failed.
+              
+              Account Information:
+              	Security ID:		S-1-5-21-2805401065-4257942109-1867365526-1108
+              	Account Name:		lockout.test
+              
+              Service Information:
+              	Service Name:		krbtgt/NORTHSTAR
+              
+              Network Information:
+              	Client Address:		::ffff:192.168.77.102
+              	Client Port:		49787
+              
+              Additional Information:
+              	Ticket Options:		0x40810010
+              	Failure Code:		0x18
+              	Pre-Authentication Type:	2
+              
+              Certificate Information:
+              	Certificate Issuer Name:		
+              	Certificate Serial Number: 	
+              	Certificate Thumbprint:		
+              
+              Certificate information is only provided if a certificate was used for pre-authentication.
+              
+              Pre-authentication types, ticket options and failure codes are defined in RFC 4120.
+              
+              If the ticket was malformed or damaged during transit and could not be decrypted, then many fields in 
+              this event might not be present.
+
+TimeCreated : 11/4/2026 5:28:23 PM
+Id          : 4771
+Message     : Kerberos pre-authentication failed.
+              
+              Account Information:
+              	Security ID:		S-1-5-21-2805401065-4257942109-1867365526-1108
+              	Account Name:		lockout.test
+              
+              Service Information:
+              	Service Name:		krbtgt/NORTHSTAR
+              
+              Network Information:
+              	Client Address:		::ffff:192.168.77.102
+              	Client Port:		49784
+              
+              Additional Information:
+              	Ticket Options:		0x40810010
+              	Failure Code:		0x18
+              	Pre-Authentication Type:	2
+              
+              Certificate Information:
+              	Certificate Issuer Name:		
+              	Certificate Serial Number: 	
+              	Certificate Thumbprint:		
+              
+              Certificate information is only provided if a certificate was used for pre-authentication.
+              
+              Pre-authentication types, ticket options and failure codes are defined in RFC 4120.
+              
+              If the ticket was malformed or damaged during transit and could not be decrypted, then many fields in 
+              this event might not be present.
+
+TimeCreated : 11/4/2026 5:28:22 PM
+Id          : 4771
+Message     : Kerberos pre-authentication failed.
+              
+              Account Information:
+              	Security ID:		S-1-5-21-2805401065-4257942109-1867365526-1108
+              	Account Name:		lockout.test
+              
+              Service Information:
+              	Service Name:		krbtgt/NORTHSTAR
+              
+              Network Information:
+              	Client Address:		::ffff:192.168.77.102
+              	Client Port:		49781
+              
+              Additional Information:
+              	Ticket Options:		0x40810010
+              	Failure Code:		0x18
+              	Pre-Authentication Type:	2
+              
+              Certificate Information:
+              	Certificate Issuer Name:		
+              	Certificate Serial Number: 	
+              	Certificate Thumbprint:		
+              
+              Certificate information is only provided if a certificate was used for pre-authentication.
+              
+              Pre-authentication types, ticket options and failure codes are defined in RFC 4120.
+              
+              If the ticket was malformed or damaged during transit and could not be decrypted, then many fields in 
+              this event might not be present.
+
+TimeCreated : 11/4/2026 5:28:22 PM
+Id          : 4771
+Message     : Kerberos pre-authentication failed.
+              
+              Account Information:
+              	Security ID:		S-1-5-21-2805401065-4257942109-1867365526-1108
+              	Account Name:		lockout.test
+              
+              Service Information:
+              	Service Name:		krbtgt/NORTHSTAR
+              
+              Network Information:
+              	Client Address:		::ffff:192.168.77.102
+              	Client Port:		49778
+              
+              Additional Information:
+              	Ticket Options:		0x40810010
+              	Failure Code:		0x18
+              	Pre-Authentication Type:	2
+              
+              Certificate Information:
+              	Certificate Issuer Name:		
+              	Certificate Serial Number: 	
+              	Certificate Thumbprint:		
+              
+              Certificate information is only provided if a certificate was used for pre-authentication.
+              
+              Pre-authentication types, ticket options and failure codes are defined in RFC 4120.
+              
+              If the ticket was malformed or damaged during transit and could not be decrypted, then many fields in 
+              this event might not be present.
+
+
+

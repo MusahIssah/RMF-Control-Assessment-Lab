@@ -1,0 +1,17 @@
+﻿--- Weekly GPO modification check ---
+
+DisplayName                                GpoStatus CreationTime           ModificationTime      
+-----------                                --------- ------------           ----------------      
+HPMG-DC-Security-Settings         AllSettingsEnabled 11/5/2026 12:10:55 PM  11/6/2026 6:04:22 PM  
+Default Domain Policy             AllSettingsEnabled 10/14/2026 4:14:51 PM  11/5/2026 4:26:08 PM  
+Default Domain Controllers Policy AllSettingsEnabled 10/14/2026 4:14:51 PM  11/2/2026 10:34:26 AM 
+LAB - DC01 Security Hardening     AllSettingsEnabled 10/23/2026 1:14:52 PM  10/23/2026 1:28:54 PM 
+LAB - WSUS01 Security Hardening   AllSettingsEnabled 10/22/2026 5:32:22 PM  10/22/2026 4:44:32 PM 
+LAB - Server Security Hardening   AllSettingsEnabled 10/21/2026 1:38:33 PM  10/21/2026 12:54:02 PM
+WSUS-Infrastructure               AllSettingsEnabled 10/16/2026 11:46:36 AM 10/16/2026 10:49:32 AM
+Firewall-Logging-Baseline         AllSettingsEnabled 10/16/2026 9:50:49 AM  10/16/2026 8:57:14 AM 
+WSUS-Broad                        AllSettingsEnabled 10/15/2026 6:34:09 PM  10/15/2026 5:41:52 PM 
+WSUS-Pilot                        AllSettingsEnabled 10/14/2026 8:06:57 PM  10/14/2026 7:13:26 PM 
+
+
+2026-11-06 18:49:09

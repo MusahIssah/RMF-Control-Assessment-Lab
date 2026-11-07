@@ -1,0 +1,14 @@
+﻿# 15_Installed_Updates
+# Collected: 2026-11-01 12:36:01 -08:00
+# Host: DC01
+# Collected by: northstar\administrator
+
+
+HotFixID  Description     InstalledOn            InstalledBy            
+--------  -----------     -----------            -----------            
+KB5126655 Security Update 10/20/2026 12:00:00 AM NORTHSTAR\Administrator
+KB5126654 Security Update 10/19/2026 12:00:00 AM NORTHSTAR\Administrator
+KB5127687 Update          10/19/2026 12:00:00 AM NT AUTHORITY\SYSTEM    
+
+
+

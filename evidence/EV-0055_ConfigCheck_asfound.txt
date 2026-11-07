@@ -1,0 +1,325 @@
+﻿--- auditpol (effective) ---
+System audit policy
+
+Category/Subcategory                      Setting
+System
+  Security System Extension               No Auditing
+
+  System Integrity                        Success and Failure
+
+  IPsec Driver                            No Auditing
+
+  Other System Events                     Success and Failure
+
+  Security State Change                   Success and Failure
+
+Logon/Logoff
+  Logon                                   Success and Failure
+
+  Logoff                                  Success
+
+  Account Lockout                         Success and Failure
+
+  IPsec Main Mode                         No Auditing
+
+  IPsec Quick Mode                        No Auditing
+
+  IPsec Extended Mode                     No Auditing
+
+  Special Logon                           Success and Failure
+
+  Other Logon/Logoff Events               No Auditing
+
+  Network Policy Server                   Success and Failure
+
+  User / Device Claims                    No Auditing
+
+  Group Membership                        No Auditing
+
+  Access Rights                           No Auditing
+
+Object Access
+  File System                             No Auditing
+
+  Registry                                No Auditing
+
+  Kernel Object                           No Auditing
+
+  SAM                                     No Auditing
+
+  Certification Services                  No Auditing
+
+  Application Generated                   No Auditing
+
+  Handle Manipulation                     No Auditing
+
+  File Share                              No Auditing
+
+  Filtering Platform Packet Drop          No Auditing
+
+  Filtering Platform Connection           No Auditing
+
+  Other Object Access Events              No Auditing
+
+  Detailed File Share                     No Auditing
+
+  Removable Storage                       No Auditing
+
+  Central Policy Staging                  No Auditing
+
+Privilege Use
+  Non Sensitive Privilege Use             No Auditing
+
+  Other Privilege Use Events              No Auditing
+
+  Sensitive Privilege Use                 Success and Failure
+
+Detailed Tracking
+  Process Creation                        No Auditing
+
+  Process Termination                     No Auditing
+
+  DPAPI Activity                          No Auditing
+
+  RPC Events                              No Auditing
+
+  Plug and Play Events                    No Auditing
+
+  Token Right Adjusted Events             No Auditing
+
+Policy Change
+  Audit Policy Change                     Success and Failure
+
+  Authentication Policy Change            Success and Failure
+
+  Authorization Policy Change             Success and Failure
+
+  MPSSVC Rule-Level Policy Change         No Auditing
+
+  Filtering Platform Policy Change        No Auditing
+
+  Other Policy Change Events              No Auditing
+
+Account Management
+  Computer Account Management             Success and Failure
+
+  Security Group Management               Success and Failure
+
+  Distribution Group Management           No Auditing
+
+  Application Group Management            No Auditing
+
+  Other Account Management Events         No Auditing
+
+  User Account Management                 Success and Failure
+
+DS Access
+  Directory Service Access                Success
+
+  Directory Service Changes               Success
+
+  Directory Service Replication           No Auditing
+
+  Detailed Directory Service Replication  No Auditing
+
+Account Logon
+  Kerberos Service Ticket Operations      Success and Failure
+
+  Other Account Logon Events              No Auditing
+
+  Kerberos Authentication Service         Success and Failure
+
+  Credential Validation                   Success and Failure
+
+--- GPO report: LAB - DC01 Security Hardening ---
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{488E58A7-C827-4774-882F-D8CC288AED61}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">ad.northstar.test</Domain>
+  </Identifier>
+  <Name>LAB - DC01 Security Hardening</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2026-10-23T20:14:52</CreatedTime>
+  <ModifiedTime>2026-10-23T21:28:55</ModifiedTime>
+  <ReadTime>2026-11-06T21:43:53.0840512Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;S-1-5-21-2805401065-4257942109-1867365526-1000)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;LCRPRC;;;S-1-5-21-2805401065-4257942109-1867365526-1000)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-2805401065-4257942109-1867365526-519)(A;CI;LCRPLORC;;;ED)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2805401065-4257942109-1867365526-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NORTHSTAR\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2805401065-4257942109-1867365526-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NORTHSTAR\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2805401065-4257942109-1867365526-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NORTHSTAR\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2805401065-4257942109-1867365526-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NORTHSTAR\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2805401065-4257942109-1867365526-1000</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NORTHSTAR\DC01$</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>16</VersionDirectory>
+    <VersionSysvol>16</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Windows/Registry" xsi:type="q1:RegistrySettings">
+        <q1:RegistrySettings clsid="{A3CCFC41-DFDB-43a5-8D26-0FE8B954DA51}">
+          <q1:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="EnableCertPaddingCheck" status="EnableCertPaddingCheck" image="12" changed="2026-10-23 20:21:54" uid="{2FF7D0D5-361C-40CF-B278-1207B162CA1B}">
+            <q1:GPOSettingOrder>1</q1:GPOSettingOrder>
+            <q1:Properties action="U" displayDecimal="0" default="0" hive="HKEY_LOCAL_MACHINE" key="SOFTWARE\Microsoft\Cryptography\Wintrust\Config" name="EnableCertPaddingCheck" type="REG_DWORD" value="00000001">
+              <q1:Values />
+            </q1:Properties>
+            <q1:Filters />
+          </q1:Registry>
+          <q1:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="EnableCertPaddingCheck" status="EnableCertPaddingCheck" image="12" changed="2026-10-23 20:22:39" uid="{7B6302E4-C718-41B5-9341-CD444C4CCB45}">
+            <q1:GPOSettingOrder>2</q1:GPOSettingOrder>
+            <q1:Properties action="U" displayDecimal="0" default="0" hive="HKEY_LOCAL_MACHINE" key="SOFTWARE\WOW6432Node\Microsoft\Cryptography\Wintrust\Config" name="EnableCertPaddingCheck" type="REG_DWORD" value="00000001">
+              <q1:Values />
+            </q1:Properties>
+            <q1:Filters />
+          </q1:Registry>
+          <q1:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="FeatureSettingsOverride" status="FeatureSettingsOverride" image="12" changed="2026-10-23 21:28:11" uid="{0D87D68E-7554-4ADA-AE09-3F582F631B75}">
+            <q1:GPOSettingOrder>3</q1:GPOSettingOrder>
+            <q1:Properties action="U" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" name="FeatureSettingsOverride" type="REG_DWORD" value="00800000">
+              <q1:Values />
+            </q1:Properties>
+            <q1:Filters />
+          </q1:Registry>
+          <q1:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="FeatureSettingsOverrideMask" status="FeatureSettingsOverrideMask" image="12" changed="2026-10-23 21:28:54" uid="{95A76E84-27AB-4AE1-8FA9-323845D7D400}">
+            <q1:GPOSettingOrder>4</q1:GPOSettingOrder>
+            <q1:Properties action="U" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" name="FeatureSettingsOverrideMask" type="REG_DWORD" value="00000003">
+              <q1:Values />
+            </q1:Properties>
+            <q1:Filters />
+          </q1:Registry>
+        </q1:RegistrySettings>
+      </Extension>
+      <Name>Windows Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>0</VersionDirectory>
+    <VersionSysvol>0</VersionSysvol>
+    <Enabled>true</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>Domain Controllers</SOMName>
+    <SOMPath>ad.northstar.test/Domain Controllers</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>
+--- GPO links on Domain Controllers OU ---
+
+DisplayName                       Enabled Enforced Order
+-----------                       ------- -------- -----
+Default Domain Controllers Policy    True     True     1
+WSUS-Infrastructure                  True    False     2
+LAB - DC01 Security Hardening        True    False     3
+HPMG-DC-Security-Settings            True    False     4
+
+
+2026-11-06 13:43:56

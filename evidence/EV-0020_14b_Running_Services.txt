@@ -1,0 +1,103 @@
+﻿# 14b_Running_Services
+# Collected: 2026-11-01 12:36:01 -08:00
+# Host: DC01
+# Collected by: northstar\administrator
+
+
+Name                   DisplayName                                             StartType
+----                   -----------                                             ---------
+NTDS                   Active Directory Domain Services                        Automatic
+ADWS                   Active Directory Web Services                           Automatic
+Appinfo                Application Information                                    Manual
+AppXSvc                AppX Deployment Service (AppXSVC)                          Manual
+BrokerInfrastructure   Background Tasks Infrastructure Service                 Automatic
+BFE                    Base Filtering Engine                                   Automatic
+camsvc                 Capability Access Manager Service                          Manual
+CertPropSvc            Certificate Propagation                                    Manual
+cbdhsvc_611da          Clipboard User Service_611da                            Automatic
+KeyIso                 CNG Key Isolation                                          Manual
+EventSystem            COM+ Event System                                       Automatic
+CDPSvc                 Connected Devices Platform Service                      Automatic
+CDPUserSvc_611da       Connected Devices Platform User Service_611da           Automatic
+DiagTrack              Connected User Experiences and Telemetry                Automatic
+CoreMessagingRegistrar CoreMessaging                                           Automatic
+VaultSvc               Credential Manager                                         Manual
+CryptSvc               Cryptographic Services                                  Automatic
+DcomLaunch             DCOM Server Process Launcher                            Automatic
+DoSvc                  Delivery Optimization                                      Manual
+Dfs                    DFS Namespace                                           Automatic
+DFSR                   DFS Replication                                         Automatic
+Dhcp                   DHCP Client                                             Automatic
+DPS                    Diagnostic Policy Service                               Automatic
+DispBrokerDesktopSvc   Display Policy Service                                  Automatic
+MSDTC                  Distributed Transaction Coordinator                     Automatic
+Dnscache               DNS Client                                              Automatic
+DNS                    DNS Server                                              Automatic
+fdPHost                Function Discovery Provider Host                           Manual
+FDResPub               Function Discovery Resource Publication                    Manual
+gpsvc                  Group Policy Client                                     Automatic
+vmickvpexchange        Hyper-V Data Exchange Service                              Manual
+vmicshutdown           Hyper-V Guest Shutdown Service                             Manual
+vmicheartbeat          Hyper-V Heartbeat Service                                  Manual
+vmicvss                Hyper-V Volume Shadow Copy Requestor                       Manual
+IsmServ                Intersite Messaging                                     Automatic
+iphlpsvc               IP Helper                                               Automatic
+Kdc                    Kerberos Key Distribution Center                        Automatic
+LSM                    Local Session Manager                                   Automatic
+WdNisSvc               Microsoft Defender Antivirus Network Inspection Service    Manual
+WinDefend              Microsoft Defender Antivirus Service                    Automatic
+MDCoreSvc              Microsoft Defender Core Service                         Automatic
+NgcSvc                 Microsoft Passport                                         Manual
+Netlogon               Netlogon                                                Automatic
+NcbService             Network Connection Broker                                  Manual
+netprofm               Network List Service                                       Manual
+NlaSvc                 Network Location Awareness                              Automatic
+NetSetupSvc            Network Setup Service                                      Manual
+nsi                    Network Store Interface Service                         Automatic
+PlugPlay               Plug and Play                                              Manual
+Power                  Power                                                   Automatic
+Spooler                Print Spooler                                           Automatic
+PcaSvc                 Program Compatibility Assistant Service                 Automatic
+SessionEnv             Remote Desktop Configuration                               Manual
+TermService            Remote Desktop Services                                    Manual
+UmRdpService           Remote Desktop Services UserMode Port Redirector           Manual
+RpcSs                  Remote Procedure Call (RPC)                             Automatic
+RemoteRegistry         Remote Registry                                         Automatic
+RpcEptMapper           RPC Endpoint Mapper                                     Automatic
+SamSs                  Security Accounts Manager                               Automatic
+LanmanServer           Server                                                  Automatic
+ShellHWDetection       Shell Hardware Detection                                Automatic
+StateRepository        State Repository Service                                Automatic
+StorSvc                Storage Service                                         Automatic
+SysMain                SysMain                                                 Automatic
+SENS                   System Event Notification Service                       Automatic
+SystemEventsBroker     System Events Broker                                    Automatic
+Schedule               Task Scheduler                                          Automatic
+lmhosts                TCP/IP NetBIOS Helper                                      Manual
+Themes                 Themes                                                  Automatic
+TimeBrokerSvc          Time Broker                                                Manual
+TabletInputService     Touch Keyboard and Handwriting Panel Service               Manual
+UsoSvc                 Update Orchestrator Service                             Automatic
+UALSVC                 User Access Logging Service                             Automatic
+UserManager            User Manager                                            Automatic
+ProfSvc                User Profile Service                                    Automatic
+vds                    Virtual Disk                                               Manual
+VSS                    Volume Shadow Copy                                         Manual
+TokenBroker            Web Account Manager                                        Manual
+Wcmsvc                 Windows Connection Manager                              Automatic
+mpssvc                 Windows Defender Firewall                               Automatic
+EventLog               Windows Event Log                                       Automatic
+FontCache              Windows Font Cache Service                              Automatic
+WLMS                   Windows Licensing Monitoring Service                    Automatic
+Winmgmt                Windows Management Instrumentation                      Automatic
+TrustedInstaller       Windows Modules Installer                                  Manual
+WpnService             Windows Push Notifications System Service               Automatic
+WpnUserService_611da   Windows Push Notifications User Service_611da           Automatic
+WinRM                  Windows Remote Management (WS-Management)               Automatic
+W32Time                Windows Time                                            Automatic
+wuauserv               Windows Update                                             Manual
+WinHttpAutoProxySvc    WinHTTP Web Proxy Auto-Discovery Service                   Manual
+LanmanWorkstation      Workstation                                             Automatic
+
+
+

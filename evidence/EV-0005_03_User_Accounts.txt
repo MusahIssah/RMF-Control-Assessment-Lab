@@ -1,0 +1,19 @@
+﻿# 03_User_Accounts
+# Collected: 2026-11-01 12:35:49 -08:00
+# Host: DC01
+# Collected by: northstar\administrator
+
+
+SamAccountName Enabled LastLogonDate         PasswordLastSet       PasswordNeverExpires PasswordNotRequired whenCreated           Description                                             
+-------------- ------- -------------         ---------------       -------------------- ------------------- -----------           -----------                                             
+Administrator     True 10/31/2026 6:28:12 PM 10/14/2026 4:01:01 PM                 True               False 10/14/2026 4:14:53 PM Built-in account for administering the computer/domain  
+Guest            False                                                             True                True 10/14/2026 4:14:53 PM Built-in account for guest access to the computer/domain
+krbtgt           False                       10/14/2026 4:15:36 PM                False               False 10/14/2026 4:15:36 PM Key Distribution Center Service Account                 
+svc_nessus       False 10/21/2026 6:49:29 AM 10/21/2026 6:33:53 AM                False               False 10/21/2026 6:33:53 AM                                                         
+
+
+
+Total accounts:    4
+Enabled accounts:  1
+Disabled accounts: 3
+

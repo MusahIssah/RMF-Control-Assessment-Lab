@@ -1,0 +1,14 @@
+﻿# 12_Firewall_Profiles
+# Collected: 2026-11-01 12:35:54 -08:00
+# Host: DC01
+# Collected by: northstar\administrator
+
+
+Name    Enabled DefaultInboundAction DefaultOutboundAction LogAllowed LogBlocked LogFileName                                          
+----    ------- -------------------- --------------------- ---------- ---------- -----------                                          
+Domain     True        NotConfigured         NotConfigured      False      False %systemroot%\system32\LogFiles\Firewall\pfirewall.log
+Private    True        NotConfigured         NotConfigured      False      False %systemroot%\system32\LogFiles\Firewall\pfirewall.log
+Public     True        NotConfigured         NotConfigured      False      False %systemroot%\system32\LogFiles\Firewall\pfirewall.log
+
+
+

@@ -1,0 +1,18 @@
+﻿# 16_Defender_Status
+# Collected: 2026-11-01 12:36:01 -08:00
+# Host: DC01
+# Collected by: northstar\administrator
+
+
+
+AMServiceEnabled              : True
+AntivirusEnabled              : True
+RealTimeProtectionEnabled     : True
+AntivirusSignatureLastUpdated : 10/31/2026 11:13:49 AM
+AntivirusSignatureVersion     : 1.463.66.0
+QuickScanEndTime              : 
+FullScanEndTime               : 
+
+
+
+

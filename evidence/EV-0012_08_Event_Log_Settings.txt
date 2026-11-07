@@ -1,0 +1,38 @@
+﻿# 08_Event_Log_Settings
+# Collected: 2026-11-01 12:35:54 -08:00
+# Host: DC01
+# Collected by: northstar\administrator
+
+
+
+LogName            : Security
+IsEnabled          : True
+LogMode            : Circular
+MaximumSizeInBytes : 134217728
+RecordCount        : 118860
+LogFilePath        : %SystemRoot%\System32\Winevt\Logs\Security.evtx
+
+LogName            : System
+IsEnabled          : True
+LogMode            : Circular
+MaximumSizeInBytes : 20971520
+RecordCount        : 8305
+LogFilePath        : %SystemRoot%\System32\Winevt\Logs\System.evtx
+
+LogName            : Application
+IsEnabled          : True
+LogMode            : Circular
+MaximumSizeInBytes : 20971520
+RecordCount        : 1351
+LogFilePath        : %SystemRoot%\System32\Winevt\Logs\Application.evtx
+
+LogName            : Directory Service
+IsEnabled          : True
+LogMode            : Circular
+MaximumSizeInBytes : 1052672
+RecordCount        : 658
+LogFilePath        : %SystemRoot%\System32\Winevt\Logs\Directory Service.evtx
+
+
+
+

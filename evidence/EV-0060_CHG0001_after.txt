@@ -1,0 +1,858 @@
+﻿--- gpupdate ---
+Updating policy...
+
+
+
+Computer Policy update has completed successfully.
+
+User Policy update has completed successfully.
+
+
+
+--- auditpol (effective) ---
+System audit policy
+
+Category/Subcategory                      Setting
+System
+  Security System Extension               No Auditing
+
+  System Integrity                        No Auditing
+
+  IPsec Driver                            No Auditing
+
+  Other System Events                     No Auditing
+
+  Security State Change                   No Auditing
+
+Logon/Logoff
+  Logon                                   No Auditing
+
+  Logoff                                  No Auditing
+
+  Account Lockout                         No Auditing
+
+  IPsec Main Mode                         No Auditing
+
+  IPsec Quick Mode                        No Auditing
+
+  IPsec Extended Mode                     No Auditing
+
+  Special Logon                           No Auditing
+
+  Other Logon/Logoff Events               No Auditing
+
+  Network Policy Server                   No Auditing
+
+  User / Device Claims                    No Auditing
+
+  Group Membership                        No Auditing
+
+  Access Rights                           No Auditing
+
+Object Access
+  File System                             No Auditing
+
+  Registry                                No Auditing
+
+  Kernel Object                           No Auditing
+
+  SAM                                     No Auditing
+
+  Certification Services                  No Auditing
+
+  Application Generated                   No Auditing
+
+  Handle Manipulation                     No Auditing
+
+  File Share                              No Auditing
+
+  Filtering Platform Packet Drop          No Auditing
+
+  Filtering Platform Connection           No Auditing
+
+  Other Object Access Events              No Auditing
+
+  Detailed File Share                     No Auditing
+
+  Removable Storage                       No Auditing
+
+  Central Policy Staging                  No Auditing
+
+Privilege Use
+  Non Sensitive Privilege Use             No Auditing
+
+  Other Privilege Use Events              No Auditing
+
+  Sensitive Privilege Use                 No Auditing
+
+Detailed Tracking
+  Process Creation                        No Auditing
+
+  Process Termination                     No Auditing
+
+  DPAPI Activity                          No Auditing
+
+  RPC Events                              No Auditing
+
+  Plug and Play Events                    No Auditing
+
+  Token Right Adjusted Events             No Auditing
+
+Policy Change
+  Audit Policy Change                     No Auditing
+
+  Authentication Policy Change            No Auditing
+
+  Authorization Policy Change             No Auditing
+
+  MPSSVC Rule-Level Policy Change         No Auditing
+
+  Filtering Platform Policy Change        No Auditing
+
+  Other Policy Change Events              No Auditing
+
+Account Management
+  Computer Account Management             No Auditing
+
+  Security Group Management               No Auditing
+
+  Distribution Group Management           No Auditing
+
+  Application Group Management            No Auditing
+
+  Other Account Management Events         No Auditing
+
+  User Account Management                 No Auditing
+
+DS Access
+  Directory Service Access                No Auditing
+
+  Directory Service Changes               No Auditing
+
+  Directory Service Replication           No Auditing
+
+  Detailed Directory Service Replication  No Auditing
+
+Account Logon
+  Kerberos Service Ticket Operations      No Auditing
+
+  Other Account Logon Events              No Auditing
+
+  Kerberos Authentication Service         No Auditing
+
+  Credential Validation                   No Auditing
+
+--- Security log settings ---
+name: Security
+enabled: true
+type: Admin
+owningPublisher: 
+isolation: Custom
+channelAccess: O:BAG:SYD:(A;;0xf0005;;;SY)(A;;0x5;;;BA)(A;;0x1;;;S-1-5-32-573)
+logging:
+  logFileName: %SystemRoot%\System32\Winevt\Logs\Security.evtx
+  retention: true
+  autoBackup: true
+  maxSize: 1073741824
+publishing:
+  fileMax: 1
+--- GPO modified time ---
+
+
+DisplayName      : HPMG-DC-Security-Settings
+ModificationTime : 11/6/2026 5:19:32 PM
+
+
+
+--- GPO report: HPMG-DC-Security-Settings ---
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{4892446C-07ED-4036-A3D4-F0AF1E50BB1A}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">ad.northstar.test</Domain>
+  </Identifier>
+  <Name>HPMG-DC-Security-Settings</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2026-11-05T20:10:55</CreatedTime>
+  <ModifiedTime>2026-11-07T01:19:32</ModifiedTime>
+  <ReadTime>2026-11-07T01:21:20.6412413Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-2805401065-4257942109-1867365526-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2805401065-4257942109-1867365526-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NORTHSTAR\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2805401065-4257942109-1867365526-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NORTHSTAR\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2805401065-4257942109-1867365526-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NORTHSTAR\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-2805401065-4257942109-1867365526-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NORTHSTAR\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>10</VersionDirectory>
+    <VersionSysvol>10</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Security" xsi:type="q1:SecuritySettings">
+        <q1:SecurityOptions>
+          <q1:KeyName>MACHINE\System\CurrentControlSet\Control\Lsa\SCENoApplyLegacyAuditPolicy</q1:KeyName>
+          <q1:SettingNumber>1</q1:SettingNumber>
+          <q1:Display>
+            <q1:Name>Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings</q1:Name>
+            <q1:Units />
+            <q1:DisplayBoolean>true</q1:DisplayBoolean>
+          </q1:Display>
+        </q1:SecurityOptions>
+        <q1:Blocked>false</q1:Blocked>
+      </Extension>
+      <Name>Security</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q2="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q2:RegistrySettings">
+        <q2:Policy>
+          <q2:Name>Back up log automatically when full</q2:Name>
+          <q2:State>Enabled</q2:State>
+          <q2:Explain>This policy setting controls Event Log behavior when the log file reaches its maximum size and takes effect only if the "Retain old events" policy setting is enabled.
+
+If you enable this policy setting and the "Retain old events" policy setting is enabled, the Event Log file is automatically closed and renamed when it is full. A new file is then started.
+
+If you disable this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and old events are retained.
+
+If you do not configure this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and the old events are retained.</q2:Explain>
+          <q2:Supported>At least Windows Vista</q2:Supported>
+          <q2:Category>Windows Components/Event Log Service/Security</q2:Category>
+        </q2:Policy>
+        <q2:Policy>
+          <q2:Name>Control Event Log behavior when the log file reaches its maximum size</q2:Name>
+          <q2:State>Enabled</q2:State>
+          <q2:Explain>This policy setting controls Event Log behavior when the log file reaches its maximum size.
+
+If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
+
+If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
+
+Note: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.</q2:Explain>
+          <q2:Supported>At least Windows Vista</q2:Supported>
+          <q2:Category>Windows Components/Event Log Service/Security</q2:Category>
+        </q2:Policy>
+        <q2:Policy>
+          <q2:Name>Specify the maximum log file size (KB)</q2:Name>
+          <q2:State>Enabled</q2:State>
+          <q2:Explain>This policy setting specifies the maximum size of the log file in kilobytes.
+
+If you enable this policy setting, you can configure the maximum log file size to be between 20 megabytes (20480 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
+
+If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 20 megabytes.</q2:Explain>
+          <q2:Supported>At least Windows Vista</q2:Supported>
+          <q2:Category>Windows Components/Event Log Service/Security</q2:Category>
+          <q2:Numeric>
+            <q2:Name>Maximum Log Size (KB)</q2:Name>
+            <q2:State>Enabled</q2:State>
+            <q2:Value>1048576</q2:Value>
+          </q2:Numeric>
+        </q2:Policy>
+        <q2:RegistrySetting>
+          <q2:KeyPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</q2:KeyPath>
+          <q2:AdmSetting>false</q2:AdmSetting>
+          <q2:Value>
+            <q2:Name>InactivityTimeoutSecs</q2:Name>
+            <q2:Number>900</q2:Number>
+          </q2:Value>
+        </q2:RegistrySetting>
+        <q2:RegistrySetting>
+          <q2:KeyPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</q2:KeyPath>
+          <q2:AdmSetting>false</q2:AdmSetting>
+          <q2:Value>
+            <q2:Name>legalnoticecaption</q2:Name>
+            <q2:String>HPMG authorized use only</q2:String>
+          </q2:Value>
+        </q2:RegistrySetting>
+        <q2:RegistrySetting>
+          <q2:KeyPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</q2:KeyPath>
+          <q2:AdmSetting>false</q2:AdmSetting>
+          <q2:Value>
+            <q2:Name>legalnoticetext</q2:Name>
+            <q2:String>This system is for authorized HPMG use only. Activity is monitored and logged. Unauthorized use may result in disciplinary action and legal penalties. By continuing you consent to monitoring.</q2:String>
+          </q2:Value>
+        </q2:RegistrySetting>
+        <q2:Blocked>false</q2:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>0</VersionDirectory>
+    <VersionSysvol>0</VersionSysvol>
+    <Enabled>true</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>Domain Controllers</SOMName>
+    <SOMPath>ad.northstar.test/Domain Controllers</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>
+--- gpresult (computer) ---
+
+Microsoft (R) Windows (R) Operating System Group Policy Result tool v2.0
+c Microsoft Corporation. All rights reserved.
+
+Created on ?11/?6/?2026 at 5:21:24 PM
+
+
+
+RSOP data for  on DC01 : Logging Mode
+--------------------------------------
+
+OS Configuration:            Primary Domain Controller
+OS Version:                  10.0.20348
+Site Name:                   Default-First-Site-Name
+Roaming Profile:             
+Local Profile:               
+Connected over a slow link?: No
+
+
+COMPUTER SETTINGS
+------------------
+    CN=DC01,OU=Domain Controllers,DC=ad,DC=northstar,DC=test
+    Last time Group Policy was applied: 11/6/2026 at 5:21:08 PM
+    Group Policy was applied from:      DC01.ad.northstar.test
+    Group Policy slow link threshold:   500 kbps
+    Domain Name:                        NORTHSTAR
+    Domain Type:                        Windows 2008 or later
+
+    Applied Group Policy Objects
+    -----------------------------
+        Default Domain Controllers Policy
+        WSUS-Infrastructure
+        LAB - DC01 Security Hardening
+        HPMG-DC-Security-Settings
+        Default Domain Policy
+
+    The following GPOs were not applied because they were filtered out
+    -------------------------------------------------------------------
+        Local Group Policy
+            Filtering:  Not Applied (Empty)
+
+    The computer is a part of the following security groups
+    -------------------------------------------------------
+        BUILTIN\Administrators
+        Everyone
+        BUILTIN\Pre-Windows 2000 Compatible Access
+        BUILTIN\Users
+        Windows Authorization Access Group
+        NT AUTHORITY\NETWORK
+        NT AUTHORITY\Authenticated Users
+        This Organization
+        DC01$
+        Domain Controllers
+        NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS
+        Authentication authority asserted identity
+        Denied RODC Password Replication Group
+        System Mandatory Level
+        
+    Resultant Set Of Policies for Computer
+    ---------------------------------------
+
+        Software Installations
+        ----------------------
+            N/A
+
+        Startup Scripts
+        ---------------
+            N/A
+
+        Shutdown Scripts
+        ----------------
+            N/A
+
+        Account Policies
+        ----------------
+            GPO: Default Domain Policy
+                Policy:            MaxRenewAge
+                Computer Setting:  7
+
+            GPO: Default Domain Policy
+                Policy:            LockoutDuration
+                Computer Setting:  15
+
+            GPO: Default Domain Policy
+                Policy:            MaximumPasswordAge
+                Computer Setting:  42
+
+            GPO: Default Domain Policy
+                Policy:            MinimumPasswordAge
+                Computer Setting:  1
+
+            GPO: Default Domain Policy
+                Policy:            ResetLockoutCount
+                Computer Setting:  15
+
+            GPO: Default Domain Policy
+                Policy:            MaxServiceAge
+                Computer Setting:  600
+
+            GPO: Default Domain Policy
+                Policy:            LockoutBadCount
+                Computer Setting:  5
+
+            GPO: Default Domain Policy
+                Policy:            MaxClockSkew
+                Computer Setting:  5
+
+            GPO: Default Domain Policy
+                Policy:            MaxTicketAge
+                Computer Setting:  10
+
+            GPO: Default Domain Policy
+                Policy:            PasswordHistorySize
+                Computer Setting:  24
+
+            GPO: Default Domain Policy
+                Policy:            MinimumPasswordLength
+                Computer Setting:  14
+
+        Audit Policy
+        ------------
+            N/A
+
+        User Rights
+        -----------
+            GPO: Default Domain Controllers Policy
+                Policy:            MachineAccountPrivilege
+                Computer Setting:  Authenticated Users
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            ChangeNotifyPrivilege
+                Computer Setting:  Everyone
+                                   LOCAL SERVICE
+                                   NETWORK SERVICE
+                                   Administrators
+                                   Authenticated Users
+                                   Pre-Windows 2000 Compatible Access
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            IncreaseBasePriorityPrivilege
+                Computer Setting:  Administrators
+                                   Window Manager\Window Manager Group
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            TakeOwnershipPrivilege
+                Computer Setting:  Administrators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            RestorePrivilege
+                Computer Setting:  Administrators
+                                   Backup Operators
+                                   Server Operators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            DebugPrivilege
+                Computer Setting:  Administrators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            SystemTimePrivilege
+                Computer Setting:  LOCAL SERVICE
+                                   Administrators
+                                   Server Operators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            SecurityPrivilege
+                Computer Setting:  Administrators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            ShutdownPrivilege
+                Computer Setting:  Administrators
+                                   Backup Operators
+                                   Server Operators
+                                   Print Operators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            AuditPrivilege
+                Computer Setting:  LOCAL SERVICE
+                                   NETWORK SERVICE
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            InteractiveLogonRight
+                Computer Setting:  Administrators
+                                   Backup Operators
+                                   Account Operators
+                                   Server Operators
+                                   Print Operators
+                                   ENTERPRISE DOMAIN CONTROLLERS
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            CreatePagefilePrivilege
+                Computer Setting:  Administrators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            BatchLogonRight
+                Computer Setting:  Administrators
+                                   Backup Operators
+                                   Performance Log Users
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            NetworkLogonRight
+                Computer Setting:  Everyone
+                                   Administrators
+                                   Authenticated Users
+                                   ENTERPRISE DOMAIN CONTROLLERS
+                                   Pre-Windows 2000 Compatible Access
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            SystemProfilePrivilege
+                Computer Setting:  Administrators
+                                   NT SERVICE\WdiServiceHost
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            RemoteShutdownPrivilege
+                Computer Setting:  Administrators
+                                   Server Operators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            BackupPrivilege
+                Computer Setting:  Administrators
+                                   Backup Operators
+                                   Server Operators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            EnableDelegationPrivilege
+                Computer Setting:  Administrators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            UndockPrivilege
+                Computer Setting:  Administrators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            SystemEnvironmentPrivilege
+                Computer Setting:  Administrators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            LoadDriverPrivilege
+                Computer Setting:  Administrators
+                                   Print Operators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            IncreaseQuotaPrivilege
+                Computer Setting:  LOCAL SERVICE
+                                   NETWORK SERVICE
+                                   Administrators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            ProfileSingleProcessPrivilege
+                Computer Setting:  Administrators
+                                   
+            GPO: Default Domain Controllers Policy
+                Policy:            AssignPrimaryTokenPrivilege
+                Computer Setting:  LOCAL SERVICE
+                                   NETWORK SERVICE
+                                   
+        Security Options
+        ----------------
+            GPO: Default Domain Policy
+                Policy:            PasswordComplexity
+                Computer Setting:  Enabled
+
+            GPO: Default Domain Policy
+                Policy:            ClearTextPassword
+                Computer Setting:  Not Enabled
+
+            GPO: Default Domain Policy
+                Policy:            ForceLogoffWhenHourExpire
+                Computer Setting:  Not Enabled
+
+            GPO: Default Domain Policy
+                Policy:            RequireLogonToChangePassword
+                Computer Setting:  Not Enabled
+
+            GPO: Default Domain Policy
+                Policy:            LSAAnonymousNameLookup
+                Computer Setting:  Not Enabled
+
+            GPO: Default Domain Policy
+                Policy:            TicketValidateClient
+                Computer Setting:  Enabled
+
+            GPO: Default Domain Controllers Policy
+                Policy:            @wsecedit.dll,-59013
+                ValueName:         MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\LDAPServerIntegrity
+                Computer Setting:  1
+
+            GPO: Default Domain Controllers Policy
+                Policy:            @wsecedit.dll,-59043
+                ValueName:         MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\RequireSecuritySignature
+                Computer Setting:  1
+
+            GPO: Default Domain Controllers Policy
+                Policy:            @wsecedit.dll,-59044
+                ValueName:         MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\EnableSecuritySignature
+                Computer Setting:  1
+
+            GPO: Default Domain Policy
+                Policy:            @wsecedit.dll,-59058
+                ValueName:         MACHINE\System\CurrentControlSet\Control\Lsa\NoLMHash
+                Computer Setting:  1
+
+            GPO: HPMG-DC-Security-Settings
+                Policy:            @wsecedit.dll,-59104
+                ValueName:         MACHINE\System\CurrentControlSet\Control\Lsa\SCENoApplyLegacyAuditPolicy
+                Computer Setting:  1
+
+            GPO: Default Domain Controllers Policy
+                Policy:            @wsecedit.dll,-59018
+                ValueName:         MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\RequireSignOrSeal
+                Computer Setting:  1
+
+        Event Log Settings
+        ------------------
+            N/A
+
+        Restricted Groups
+        -----------------
+            N/A
+
+        System Services
+        ---------------
+            N/A
+
+        Registry Settings
+        -----------------
+            N/A
+
+        File System Settings
+        --------------------
+            N/A
+
+        Public Key Policies
+        -------------------
+            N/A
+
+        Administrative Templates
+        ------------------------
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\ScheduledInstallDay
+                Value:       0, 0, 0, 0
+                State:       Enabled
+
+            GPO: HPMG-DC-Security-Settings
+                Folder Id: SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\legalnoticecaption
+                Value:       72, 0, 80, 0, 77, 0, 71, 0, 32, 0, 97, 0, 117, 0, 116, 0, 104, 0, 111, 0, 114, 0, 105, 0, 122, 0, 101, 0, 100, 0, 32, 0, 117, 0, 115, 0, 101, 0, 32, 0, 111, 0, 110, 0, 108, 0, 121, 0, 0, 0
+                State:       Enabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\ScheduledInstallEveryWeek
+                Value:       1, 0, 0, 0
+                State:       Enabled
+
+            GPO: HPMG-DC-Security-Settings
+                Folder Id: SOFTWARE\Policies\Microsoft\Windows\EventLog\Security\Retention
+                Value:       49, 0, 0, 0
+                State:       Enabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\UpdateServiceUrlAlternate
+                Value:       0, 0
+                State:       Enabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\FillEmptyContentUrls
+                State:       disabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\WUStatusServer
+                Value:       104, 0, 116, 0, 116, 0, 112, 0, 58, 0, 47, 0, 47, 0, 119, 0, 115, 0, 117, 0, 115, 0, 48, 0, 49, 0, 46, 0, 97, 0, 100, 0, 46, 0, 110, 0, 111, 0, 114, 0, 116, 0, 104, 0, 115, 0, 116, 0, 97, 0, 114, 0, 46, 0, 116, 0, 101, 0, 115, 0, 116, 0, 58, 0, 56, 0, 53, 0, 51, 0, 48, 0, 0, 0
+                State:       Enabled
+
+            GPO: HPMG-DC-Security-Settings
+                Folder Id: SOFTWARE\Policies\Microsoft\Windows\EventLog\Security\MaxSize
+                Value:       0, 0, 16, 0
+                State:       Enabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\ScheduledInstallTime
+                Value:       3, 0, 0, 0
+                State:       Enabled
+
+            GPO: HPMG-DC-Security-Settings
+                Folder Id: SOFTWARE\Policies\Microsoft\Windows\EventLog\Security\AutoBackupLogFiles
+                Value:       49, 0, 0, 0
+                State:       Enabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\UseWUServer
+                Value:       1, 0, 0, 0
+                State:       Enabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection
+                State:       disabled
+
+            GPO: HPMG-DC-Security-Settings
+                Folder Id: SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\legalnoticetext
+                Value:       84, 0, 104, 0, 105, 0, 115, 0, 32, 0, 115, 0, 121, 0, 115, 0, 116, 0, 101, 0, 109, 0, 32, 0, 105, 0, 115, 0, 32, 0, 102, 0, 111, 0, 114, 0, 32, 0, 97, 0, 117, 0, 116, 0, 104, 0, 111, 0, 114, 0, 105, 0, 122, 0, 101, 0, 100, 0, 32, 0, 72, 0, 80, 0, 77, 0, 71, 0, 32, 0, 117, 0, 115, 0, 101, 0, 32, 0, 111, 0, 110, 0, 108, 0, 121, 0, 46, 0, 32, 0, 65, 0, 99, 0, 116, 0, 105, 0, 118, 0, 105, 0, 116, 0, 121, 0, 32, 0, 105, 0, 115, 0, 32, 0, 109, 0, 111, 0, 110, 0, 105, 0, 116, 0, 111, 0, 114, 0, 101, 0, 100, 0, 32, 0, 97, 0, 110, 0, 100, 0, 32, 0, 108, 0, 111, 0, 103, 0, 103, 0, 101, 0, 100, 0, 46, 0, 32, 0, 85, 0, 110, 0, 97, 0, 117, 0, 116, 0, 104, 0, 111, 0, 114, 0, 105, 0, 122, 0, 101, 0, 100, 0, 32, 0, 117, 0, 115, 0, 101, 0, 32, 0, 109, 0, 97, 0, 121, 0, 32, 0, 114, 0, 101, 0, 115, 0, 117, 0, 108, 0, 116, 0, 32, 0, 105, 0, 110, 0, 32, 0, 100, 0, 105, 0, 115, 0, 99, 0, 105, 0, 112, 0, 108, 0, 105, 0, 110, 0, 97, 0, 114, 0, 121, 0, 32, 0, 97, 0, 99, 0, 116, 0, 105, 0, 111, 0, 110, 0, 32, 0, 97, 0, 110, 0, 100, 0, 32, 0, 108, 0, 101, 0, 103, 0, 97, 0, 108, 0, 32, 0, 112, 0, 101, 0, 110, 0, 97, 0, 108, 0, 116, 0, 105, 0, 101, 0, 115, 0, 46, 0, 32, 0, 66, 0, 121, 0, 32, 0, 99, 0, 111, 0, 110, 0, 116, 0, 105, 0, 110, 0, 117, 0, 105, 0, 110, 0, 103, 0, 32, 0, 121, 0, 111, 0, 117, 0, 32, 0, 99, 0, 111, 0, 110, 0, 115, 0, 101, 0, 110, 0, 116, 0, 32, 0, 116, 0, 111, 0, 32, 0, 109, 0, 111, 0, 110, 0, 105, 0, 116, 0, 111, 0, 114, 0, 105, 0, 110, 0, 103, 0, 46, 0, 0, 0
+                State:       Enabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\NoAutoUpdate
+                Value:       0, 0, 0, 0
+                State:       Enabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\TargetGroupEnabled
+                Value:       1, 0, 0, 0
+                State:       Enabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\WUServer
+                Value:       104, 0, 116, 0, 116, 0, 112, 0, 58, 0, 47, 0, 47, 0, 119, 0, 115, 0, 117, 0, 115, 0, 48, 0, 49, 0, 46, 0, 97, 0, 100, 0, 46, 0, 110, 0, 111, 0, 114, 0, 116, 0, 104, 0, 115, 0, 116, 0, 97, 0, 114, 0, 46, 0, 116, 0, 101, 0, 115, 0, 116, 0, 58, 0, 56, 0, 53, 0, 51, 0, 48, 0, 0, 0
+                State:       Enabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\AllowMUUpdateService
+                State:       disabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\ScheduledInstallFourthWeek
+                State:       disabled
+
+            GPO: HPMG-DC-Security-Settings
+                Folder Id: SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\InactivityTimeoutSecs
+                Value:       132, 3, 0, 0
+                State:       Enabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\ScheduledInstallThirdWeek
+                State:       disabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\TargetGroup
+                Value:       73, 0, 110, 0, 102, 0, 114, 0, 97, 0, 115, 0, 116, 0, 114, 0, 117, 0, 99, 0, 116, 0, 117, 0, 114, 0, 101, 0, 0, 0
+                State:       Enabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\AutomaticMaintenanceEnabled
+                State:       disabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\AUOptions
+                Value:       3, 0, 0, 0
+                State:       Enabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\ScheduledInstallFirstWeek
+                State:       disabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\AU\ScheduledInstallSecondWeek
+                State:       disabled
+
+            GPO: WSUS-Infrastructure
+                Folder Id: Software\Policies\Microsoft\Windows\WindowsUpdate\SetProxyBehaviorForUpdateDetection
+                Value:       0, 0, 0, 0
+                State:       Enabled
+2026-11-06 17:21:24

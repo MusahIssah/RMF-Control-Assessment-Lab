@@ -1,0 +1,11 @@
+﻿
+SamAccountName Enabled PasswordNeverExpires whenCreated           Description                                             
+-------------- ------- -------------------- -----------           -----------                                             
+Administrator    False                 True 10/14/2026 4:14:53 PM Built-in account for administering the computer/domain  
+Guest            False                 True 10/14/2026 4:14:53 PM Built-in account for guest access to the computer/domain
+krbtgt           False                False 10/14/2026 4:15:36 PM Key Distribution Center Service Account                 
+svc_nessus       False                False 10/21/2026 6:33:53 AM                                                         
+adm.mbell         True                False 11/4/2026 7:42:25 PM  REQ-0002 administrator account                          
+mbell             True                False 11/4/2026 7:49:31 PM  REQ-0001 standard account                               
+
+

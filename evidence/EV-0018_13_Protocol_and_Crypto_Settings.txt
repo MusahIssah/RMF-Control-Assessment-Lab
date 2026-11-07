@@ -1,0 +1,32 @@
+﻿# 13_Protocol_and_Crypto_Settings
+# Collected: 2026-11-01 12:35:58 -08:00
+# Host: DC01
+# Collected by: northstar\administrator
+
+--- SMB server configuration ---
+
+
+EnableSMB1Protocol       : False
+EnableSMB2Protocol       : True
+RequireSecuritySignature : True
+EnableSecuritySignature  : True
+EncryptData              : False
+
+
+
+--- NTLM / LDAP signing ---
+HKLM:\SYSTEM\CurrentControlSet\Control\Lsa\LmCompatibilityLevel = (not set; OS default applies)
+HKLM:\SYSTEM\CurrentControlSet\Services\NTDS\Parameters\LDAPServerIntegrity = 1
+HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters\RequireSignOrSeal = 1
+--- TLS / SSL protocol overrides (none listed means OS defaults) ---
+HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server\Enabled = (not set; OS default applies)
+HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client\Enabled = (not set; OS default applies)
+HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server\Enabled = (not set; OS default applies)
+HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client\Enabled = (not set; OS default applies)
+HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server\Enabled = (not set; OS default applies)
+HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client\Enabled = (not set; OS default applies)
+HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Server\Enabled = (not set; OS default applies)
+HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Client\Enabled = (not set; OS default applies)
+--- FIPS mode ---
+HKLM:\SYSTEM\CurrentControlSet\Control\Lsa\FipsAlgorithmPolicy\Enabled = 0
+
