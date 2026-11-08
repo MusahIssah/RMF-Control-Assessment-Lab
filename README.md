@@ -8,7 +8,7 @@ A hands-on Risk Management Framework (RMF) control assessment that I ran as the 
 **Period:** Nov 1 to Nov 7, 2026  
 **Standards:** NIST SP 800-53 Rev 5.2.0 (Moderate baseline, SP 800-53B), assessment procedures from SP 800-53A, process from SP 800-37
 
-[Download the assessment workbook](RMF_Control_Assessor_Workbook_Moderate_v2.xlsx) · [Browse the evidence](evidence/)
+[Download the assessment workbook](RMF_Control_Assessor_Workbook_Moderate_v2.xlsx) · [Download the SSP control implementation matrix](SSP_Control_Implementation_Matrix_DC01.xlsx) · [Browse the evidence](evidence/)
 
 ## What this project shows
 
@@ -188,13 +188,15 @@ I kept all three results as evidence and recorded the lesson in the closed ticke
 
 ## Limitations
 
-- **Partial scope.** 11 controls of 287 assessed. There is no SSP. I assessed the system against the organization's policies and the control text.
+- **Partial scope.** 11 controls of 287 assessed. The original assessment used the organization's policies and the control text. On November 8, I added a draft SSP control implementation matrix documenting how DC01 implements 10 sample controls, who is responsible, and which evidence supports each claim.
 - **One person.** I played the assessor and also did the remediation in a system administrator role, so retests are not fully independent. The Retest Log records this.
 - **Fictional organization.** HPMG, its policies and approvals are made up for practice. The ISO's interview answers, the coordination record and approvals are written by me and are labeled fictional in the documents.
 - **Lab clock.** DC01's clock is Pacific time, about 3 hours behind Eastern. Evidence notes record times in DC01 time where it matters.
 - **Open items.** POAM-002, POAM-006 and POAM-010 are not closed. The policy needs a v1.1 (group removal events 4729, 4733 and 4757, and the deviation updates), and baseline v1.1 will add the unexplained change as DEV-004.
 
 ## Files
+
+- [SSP control implementation matrix](SSP_Control_Implementation_Matrix_DC01.xlsx) (teaching draft v0.1, November 8, 2026). Includes system information, implementation statements, and POA&M references.
 
 - `README.md`: this summary.
 - `RMF_Control_Assessor_Workbook_Moderate_v2.xlsx`: the assessor workbook (Summary, Control Assessment, Objectives, Evidence Log, POAM Findings, Retest Log).
