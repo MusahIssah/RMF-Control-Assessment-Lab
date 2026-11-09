@@ -1,6 +1,6 @@
 # RMF Control Assessment Lab: Windows Domain Controller (DC01)
 
-[![Watch the RMF control assessment walkthrough on YouTube](https://i.ytimg.com/vi/nYuiG7V9qeQ/maxresdefault.jpg)](https://youtu.be/nYuiG7V9qeQ)
+[![Watch the RMF control assessment walkthrough on YouTube](rmf-assessment-guide-thumbnail.jpeg)](https://youtu.be/nYuiG7V9qeQ)
 
 A hands-on Risk Management Framework (RMF) control assessment that I ran as the assessor on a Windows Server 2022 domain controller in my home lab. The organization, Harbor Point Medical Group (HPMG), and every person, approval and policy in it are fictional. The technical evidence is real and comes from my own lab.
 
